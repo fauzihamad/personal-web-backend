@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+
+    public function home(){
+        return view('welcome');
+    }
+    
     public function loginPage(){
         if(Auth::check()){
             redirect()->route('master.client.index');
@@ -32,7 +37,7 @@ class AuthController extends Controller
         $user = $request->user();
         $token = $user->createToken('auth-token')->plainTextToken;
 
-        $intendedUrl = $request->session()->pull('url.intended', route('media.plan'));
+        $intendedUrl = $request->session()->pull('url.intended', route('admin.index'));
         return response()->json([
             'token' => $token,
             'redirect_url' => $intendedUrl

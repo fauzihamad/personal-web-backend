@@ -28,30 +28,21 @@
     <div class="container sm:px-10">
         <div class="block xl:grid grid-cols-2 gap-4">
             <!-- BEGIN: Login Info -->
-            <div class="hidden xl:flex flex-col min-h-screen"
-                style="
-                        background-image: url(../assets/images/test.svg);
-                        background-repeat: no-repeat;
-                        background-size: auto 100%;
-                        z-index: 9999;
-                        background-position: 100%;
-                        transform: translate(-10%,0);
-                    ">
-                <a href="" class="-intro-x flex items-center pt-5">
-                    <img alt="Icewall Tailwind HTML Admin Template" class="w-6 ml-6"
-                        src={{ asset('assets/images/logo_a.svg') }}>
-                    <span class="text-white text-lg ml-3"> Ad<span class="font-medium">Visor</span> </span>
-                </a>
-                <div class="flex flex-col h-[80%] justify-end">
-                    {{-- <img alt="Icewall Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16" src={{asset("assets/images/illustration.svg")}}> --}}
-                    <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10 ml-6">
-                        Advertising and Finance
-                        <br>
-                        System Solution
-                    </div>
-                    <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-gray-500 ml-6"><br></div>
-                </div>
-            </div>
+            <div class="hidden xl:flex flex-col min-h-screen">
+              <a href="" class="-intro-x flex items-center pt-5">
+                  <img alt="Icewall Tailwind HTML Admin Template" class="w-6" src="{{asset('assets/images/logo.svg')}}">
+                  <span class="text-white text-lg ml-3"> Ice<span class="font-medium">wall</span> </span>
+              </a>
+              <div class="my-auto">
+                  <img alt="Icewall Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16" src="{{asset('assets/images/illustration.svg')}}">
+                  <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">
+                      A few more clicks to 
+                      <br>
+                      sign in to your account.
+                  </div>
+                  <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-gray-500">Manage all your e-commerce accounts in one place</div>
+              </div>
+          </div>
             <!-- END: Login Info -->
             <!-- BEGIN: Login Form -->
             <div class="h-screen xl:h-auto flex py-5 xl:py-0 my-10 xl:my-0">
@@ -151,7 +142,7 @@
                 if (response.token) {
                     await setItem('auth-token', response.token);
                     console.log(response.token);
-                    window.location.href = response.redirect_url || '/media/plan';
+                    window.location.href = response.redirect_url || '/admin/';
                 } else {
                     alert('Login failed. Please check your credentials.');
                 }

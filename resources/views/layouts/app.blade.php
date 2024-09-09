@@ -711,166 +711,56 @@
             {{-- side-nav--simple --}}
             <nav class="side-nav ">
                 <ul>
-                    @canAny(['plan-list', 'plan-create', 'plan-update', 'plan-delete'])
                     <li>
-                        <a href="{{ route('media.plan') }}"
-                            class="side-menu {{ Request::is('media*') ? 'side-menu--active' : '' }}">
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin*') ? 'side-menu--active' : '' }}">
                             <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
                             <div class="side-menu__title">
-                                Plan
+                                Dashboard
                             </div>
                         </a>
                     </li>
-                    @endcan
-                    @canAny(['schedule-list', 'schedule-create', 'schedule-update', 'schedule-delete'])
+
                     <li>
-                        <a href="{{ route('schedule.index') }}"
-                            class="side-menu {{ Request::is('schedule*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="calendar"></i> </div>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/services*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
                             <div class="side-menu__title">
-                                Schedule
+                                Services
                             </div>
                         </a>
                     </li>
-                    @endcan
-                    @canAny(['order-list', 'order-create', 'order-update', 'order-delete'])
+
                     <li>
-                        <a href="{{ route('order.index') }}"
-                            class="side-menu {{ Request::is('order*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="briefcase"></i> </div>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/skills*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
                             <div class="side-menu__title">
-                                Order
+                                Skills
                             </div>
                         </a>
                     </li>
-                    @endcan
-                    @canAny(['campaign-detail-list', 'campaign-detail-create', 'campaign-detail-update', 'campaign-detail-delete'])
+
                     <li>
-                        <a href="{{ route('campaign-detail.index') }}"
-                            class="side-menu {{ Request::is('campaign-detail*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="tv"></i> </div>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/projects*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
                             <div class="side-menu__title">
-                                Campaign Detail
+                                Projects
                             </div>
                         </a>
                     </li>
-                    @endcan
-                    @canAny(['control-list', 'control-create', 'control-update', 'control-delete'])
+
                     <li>
-                        <a href="{{ route('control.index') }}"
-                            class="side-menu {{ Request::is('control*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="airplay"></i> </div>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/projects-category*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
                             <div class="side-menu__title">
-                                Control
+                                Projects Category
                             </div>
                         </a>
                     </li>
-                    @endcan
-                    <li>
-                        <a href="javascript:;.html"
-                            class="side-menu {{ Request::is('accounting*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="bar-chart"></i> </div>
-                            <div class="side-menu__title">
-                                Accounting
-                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
-                            </div>
-                        </a>
-                        <ul class="{{ Request::is('accounting*') ? 'side-menu__sub-open' : 'side-menu__sub-close' }}">
-                            @canAny(['AR-list', 'AR-create', 'AR-update', 'AR-delete'])
-                            <li>
-                                <a href="{{ route('accounting.account-receivables.index') }}"
-                                    class="side-menu {{ Request::is('accounting/account-receivables*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Account Receivables </div>
-                                </a>
-                            </li>
-                            @endcan
 
-                            @canAny(['AP-list', 'AP-create', 'AP-update', 'AP-delete'])
-                            <li>
-                                <a href="{{ route('accounting.account-payables.index') }}"
-                                    class="side-menu {{ Request::is('accounting/account-payables*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="dollar-sign"></i> </div>
-                                    <div class="side-menu__title"> Account Payables </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                            @canAny(['delivery-note-list', 'delivery-note-create', 'delivery-note-update', 'delivery-note-delete'])
-                            <li>
-                                <a href="{{ route('accounting.delivery-note.index') }}"
-                                    class="side-menu {{ Request::is('accounting.delivery-note*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Delivery Notes </div>
-                                </a>
-                            </li>
-                            @endcan
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;.html"
-                            class="side-menu {{ Request::is('master*') ? 'side-menu--active' : '' }}">
-                            <div class="side-menu__icon"> <i data-feather="edit"></i> </div>
-                            <div class="side-menu__title">
-                                Master
-                                <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
-                            </div>
-                        </a>
-                        <ul class="{{ Request::is('master*') ? 'side-menu__sub-open' : 'side-menu__sub-close' }}">
-                            @canAny(['client-list', 'client-create', 'client-update', 'client-delete'])
-                            <li>
-                                <a href="{{ route('master.client.index') }}"
-                                    class="side-menu {{ Request::is('master/client*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Client </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                            @canAny(['vendor-list', 'vendor-create', 'vendor-update', 'vendor-delete'])
-                            <li>
-                                <a href="{{ route('master.vendor.index') }}"
-                                    class="side-menu {{ Request::is('master/vendor*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Vendor </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                            @canAny(['product-list', 'product-create', 'product-update', 'product-delete'])
-                            <li>
-                                <a href="{{ route('master.product.index') }}"
-                                    class="side-menu {{ Request::is('master/product*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Product </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                            @canAny(['program-list', 'program-create', 'program-update', 'program-delete'])
-                            <li>
-                                <a href="{{ route('master.program.index') }}"
-                                    class="side-menu {{ Request::is('master/program*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title"> Program </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                            @canAny(['user-list', 'user-create', 'user-update', 'user-delete'])    
-                            <li>
-                                <a href="{{ route('users.index') }}"
-                                    class="side-menu {{ Request::is('users*') ? 'side-menu--active' : '' }}">
-                                    <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
-                                    <div class="side-menu__title">
-                                        Users
-                                    </div>
-                                </a>
-                            </li>
-                            @endcan
-
-                        </ul>
-                    </li>
                 </ul>
                 <div class="flex items-center justify-center mt-3">
                     <button class="btn btn-primary" id="btn-minimize">
