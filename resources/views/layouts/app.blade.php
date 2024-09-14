@@ -761,6 +761,26 @@
                         </a>
                     </li>
 
+                    <li>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/experience*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
+                            <div class="side-menu__title">
+                                Experience
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('admin.index') }}"
+                            class="side-menu {{ Request::is('admin/resume*') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
+                            <div class="side-menu__title">
+                                Resume
+                            </div>
+                        </a>
+                    </li>
+
                 </ul>
                 <div class="flex items-center justify-center mt-3">
                     <button class="btn btn-primary" id="btn-minimize">
