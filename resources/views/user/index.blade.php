@@ -26,7 +26,7 @@
 <section class="hero">
   
   <div class="bg-white flex min-h-[600px] items-center justify-center rounded-lg shadow-lg"> 
-    <div class="flex gap-20 max-w-[50%]">
+    <div class="flex gap-[100px] max-w-[80%]">
 
       <div class="flex flex-col bg-[#1E293B] p-2 rounded-xl gap-2 drop-shadow-2xl shadow-blue-600">
         <div class="bg-white p-[1px] rounded-xl">
@@ -58,6 +58,71 @@
 
     </div>
   </div>
+
+</section>
+
+<section class="total">
+  <div class="bg-white flex items-center justify-around rounded-lg shadow-lg py-8"> 
+    <div class="flex flex-col gap-0 items-center">
+      <p class="gradient-text text-[48px] font-bold italic">12+</p>
+      <p class="text-slate-600 font-medium">Total Client</p>
+    </div>
+
+    <div class="flex flex-col gap-0 items-center">
+      <p class="gradient-text text-[48px] font-bold italic">12+</p>
+      <p class="text-slate-600 font-medium">Projects Completed</p>
+    </div>
+
+    <div class="flex flex-col gap-0 items-center">
+      <p class="gradient-text text-[48px] font-bold italic">4+</p>
+      <p class="text-slate-600 font-medium">Years of Experience</p>
+    </div>
+
+    <div class="flex flex-col gap-0 items-center">
+      <p class="gradient-text text-[48px] font-bold italic">4</p>
+      <p class="text-slate-600 font-medium">Services Offered</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="quote">
+  
+</section>
+
+<section class="services-intro">
+
+</section>
+
+<section class="services">
+
+</section>
+
+<section class="skils-intro">
+
+</section>
+
+<section class="skils">
+
+</section>
+
+<section class="project-intro">
+
+</section>
+
+<section class="filter-project">
+
+</section>
+
+<section class="project">
+
+</section>
+
+<section class="all-project">
+
+</section>
+
+<section class="contact">
 
 </section>
 
