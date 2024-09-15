@@ -87,27 +87,140 @@
 </section>
 
 <section class="quote">
-  
+  <div class="bg-white flex relative min-h-[400px] items-center justify-around rounded-lg shadow-lg py-8"> 
+      <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute top-0 left-0">
+      <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute bottom-0 right-0 rotate-180	">
+      <div class="flex flex-col">
+        <p class="text-slate-800 font-bold text-[48px] italic text-center">“First, solve the problem. <br>
+          Then, write the code.”</p>
+        <p class="font-bold gradient-text2 text-center">John Johnson</p>
+      </div>
+  </div>
 </section>
 
 <section class="services-intro">
-
+  <div class="bg-white flex relative  rounded-lg shadow-lg py-8"> 
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-50 left-0">
+    <div class="flex gap-[80px] items-center mx-32">
+      <p class="text-slate-800 font-bold text-[48px] italic text-center">Services</p>
+      <p class="font-medium text-slate-600 text-start">Offering tailored services to enhance your brand, from stunning web designs <br> to engaging apps. Let’s bring your vision to life!</p>
+    </div>
+  </div>
 </section>
 
 <section class="services">
+  <div class="grid grid-cols-4 gap-4">
+    <div class="bg-white flex flex-col items-center p-4 rounded-lg shadow-lg py-8"> 
+      <img src="{{asset('assets/images/icon/services-personal-web.svg')}}" alt="" class="flex-1">
+      <p class="flex-none font-bold gradient-text2 text-[20px] mt-16">Personal Web</p>
+      <p class="flex-none text-slate-600 text-center font-medium text-md">Custom sites that showcase your unique identity</p>
+    </div>
 
+    <div class="bg-white flex flex-col items-center p-4 rounded-lg shadow-lg py-8"> 
+      <img src="{{asset('assets/images/icon/services-company-profile.svg')}}" alt="" class="flex-1">
+      <p class="flex-none font-bold gradient-text2 text-[20px] mt-16">Company Profile</p>
+      <p class="flex-none text-slate-600 text-center font-medium text-md">Custom sites that showcase your unique identity</p>
+    </div>
+
+    <div class="bg-white flex flex-col items-center p-4 rounded-lg shadow-lg py-8"> 
+      <img src="{{asset('assets/images/icon/services-web.svg')}}" alt="" class="flex-1">
+      <p class="flex-none font-bold gradient-text2 text-[20px] mt-16">Web</p>
+      <p class="flex-none text-slate-600 text-center font-medium text-md">Custom sites that showcase your unique identity</p>
+    </div>
+
+    <div class="bg-white flex flex-col items-center p-4 rounded-lg shadow-lg py-8"> 
+      <img src="{{asset('assets/images/icon/services-mobile.svg')}}" alt="" class="flex-1">
+      <p class="flex-none font-bold gradient-text2 text-[20px] mt-16">Mobile</p>
+      <p class="flex-none text-slate-600 text-center font-medium text-md">Custom sites that showcase your unique identity</p>
+    </div>
+    
+  </div>
 </section>
 
 <section class="skils-intro">
-
+  <div class="bg-white flex relative  rounded-lg shadow-lg py-8"> 
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-50 right-0 rotate-180">
+    <div class="flex gap-[80px] items-center justify-end w-full mx-32">
+      <p class="font-medium text-slate-600 text-end">Leveraging top industry technologies to create innovative web and mobile <br> solutions, ensuring high-quality, scalable applications.
+        Skills</p>
+      <p class="text-slate-800 font-bold text-[48px] italic text-center">Skills</p>
+    </div>
+  </div>
 </section>
 
 <section class="skils">
+   <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-html-light.svg')}}" alt="">
+        </div>
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-css-light.svg')}}" alt="">
+        </div>
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-js-light.svg')}}" alt="">
+        </div>
+        <div class="col-span-1 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-php-light.svg')}}" alt="">
+        </div>
+        <div class="col-span-2 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-mysql-light.svg')}}" alt="">
+        </div>
+        <div class="col-span-2 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-tailwind-light.svg')}}" alt="">
+        </div>
+        <div class="col-span-1 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-boostrap-light.svg')}}" alt="">
+        </div>
+      </div>
 
+      <div class="bg-white flex items-center justify-center rounded-lg p-8">
+        <img src="{{asset('assets/images/logo/logo-laravel-light.svg')}}" alt="laravel" class="drop-shadow-lg shadow-red-900">
+      </div>
+
+      <div class="grid grid-cols-3 gap-4">
+
+        <div class="col-span-2 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-flutter-light.svg')}}" alt="">
+        </div>
+
+        <div class="col-span-1 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-react-light.svg')}}" alt="">
+        </div>
+
+        <div class="col-span-1 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-vue-light.svg')}}" alt="">
+        </div>
+
+        <div class="col-span-2 bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-node-js-light.svg')}}" alt="">
+        </div>
+
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-mongo-db-light.svg')}}" alt="">
+        </div>
+
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-vs-code-light.svg')}}" alt="">
+        </div>
+
+        <div class="bg-white flex items-center justify-center rounded-lg p-8">
+          <img src="{{asset('assets/images/logo/logo-postman-light.svg')}}" alt="">
+        </div>
+        
+      </div>
+
+   </div> 
 </section>
 
 <section class="project-intro">
-
+  <div class="bg-white flex relative  rounded-lg shadow-lg py-8"> 
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-50 left-0">
+    <div class="flex gap-[80px] items-center mx-32">
+      <p class="text-slate-800 font-bold text-[48px] italic text-center">Projects</p>
+      <p class="font-medium text-slate-600 text-start">Offering tailored services to enhance your brand, from stunning web designs <br> to engaging apps. Let’s bring your vision to life!</p>
+    </div>
+  </div>
 </section>
 
 <section class="filter-project">
@@ -115,7 +228,14 @@
 </section>
 
 <section class="project">
-
+  <div class="grid grid-cols-2 gap-4"> 
+    <div class="bg-white flex justify-center rounded-lg px-8 py-[60px]">
+      <div class="relative w-3/5 bg-blue-900 rounded-t-[32px] rounded-b-[64px] flex h-[240px]">
+        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute left-8 top-[-30px] h-max">
+        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute right-8 top-[-30px] h-max rounded-br-lg">
+      </div>
+    </div>
+  </div>  
 </section>
 
 <section class="all-project">

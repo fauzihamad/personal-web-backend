@@ -18,7 +18,7 @@
             font-family: aptly, sans-serif;
         }
     </style>
-<body class="flex flex-col gap-4 mx-32 min-w-[100vh] mb-4">
+<body class="flex flex-col gap-4 mx-48 min-w-[100vh] mb-4">
  
     @include('user.layouts.partials.header')
 
