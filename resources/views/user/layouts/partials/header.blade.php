@@ -1,7 +1,7 @@
 <div class="flex px-8 items-center py-4 bg-white rounded-b-lg shadow-lg">
   <div class="flex gap-4 justify-self-start flex-none">
     <a href="javascript:;" class="font-bold italic text-md">Home</a>
-    <a href="javascript:;" class="font-bold italic text-md">Project</a>
+    <a href="javascript:;" class="font-light italic text-md">Project</a>
   </div>
 
   <div class="flex flex-1 gap-2 justify-self-center justify-center">

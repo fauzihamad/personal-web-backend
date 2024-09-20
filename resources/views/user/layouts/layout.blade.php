@@ -27,6 +27,9 @@
     @include('user.layouts.partials.footer')
 
   @yield('script')
+
+  <script>
+  </script>
 </body>
 
 </html>

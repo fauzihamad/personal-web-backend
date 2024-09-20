@@ -22,6 +22,7 @@
     color: white;
   }
 
+
 </style>
 <section class="hero">
   
@@ -224,26 +225,46 @@
 </section>
 
 <section class="filter-project">
-
+  <div class="bg-white flex relative rounded-lg shadow-lg py-8 h-[100px]"> 
+  </div>
 </section>
 
 <section class="project">
   <div class="grid grid-cols-2 gap-4"> 
     <div class="bg-white flex justify-center rounded-lg px-8 py-[60px]">
-      <div class="relative w-3/5 bg-blue-900 rounded-t-[32px] rounded-b-[64px] flex h-[240px]">
-        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute left-8 top-[-30px] h-max">
-        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute right-8 top-[-30px] h-max rounded-br-lg">
+      <div class="relative w-[358px] bg-blue-900 rounded-t-[32px] flex h-[220px] rounded-b-[64px]">
+        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute left-6 top-[-40px] rounded-bl-[20px]">
+        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute right-6 top-[-40px] rounded-br-[20px]">
       </div>
     </div>
   </div>  
 </section>
 
 <section class="all-project">
-
+  <div class="bg-white flex relative rounded-lg shadow-lg py-8 h-[100px] items-center"> 
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute left-0">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute right-0 rotate-180">
+    
+    <div class="flex items-center justify-center w-full">
+      <button class="text-blue-600 border-[4px] border-blue-600 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white">
+        View All Project
+        <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="hover:bg-white hover:text-blue-600" alt="arrow">
+      </button>
+    </div>
+  </div>
 </section>
 
 <section class="contact">
-
+  <div class="bg-white flex min-h-[400px] items-center justify-around rounded-lg shadow-lg py-8"> 
+    <div class="flex flex-col gap-4">
+      <p class="text-slate-800 font-bold text-[48px] italic text-center leading-0">Ready to bring your ideas to life? <br>
+        Let’s work together!</p>
+      <button class="w-fit mx-auto text-blue-600 border-[4px] border-blue-600 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white hover:border-blue-600 transition">
+        Say Hello on Whatsapp
+        <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="hover:bg-white hover:text-blue-600" alt="arrow">
+      </button>
+    </div>
+</div>
 </section>
 
 @endsection
