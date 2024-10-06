@@ -4,26 +4,6 @@
 
 @section('content')
 
-<style>
-  .gradient-text {
-    background: linear-gradient(to right, #bfdbfe, #60a5fa); /* blue-200 to blue-400 */
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .gradient-text2 {
-    background: linear-gradient(to right, #60A5FA, #2563EB);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .btn-explore:hover{
-    background: linear-gradient(to right, #bfdbfe, #60a5fa); /* blue-200 to blue-400 */
-    color: white;
-  }
-
-
-</style>
 <section class="hero">
   
   <div class="bg-white flex min-h-[600px] items-center justify-center rounded-lg shadow-lg"> 
@@ -229,14 +209,42 @@
   </div>
 </section>
 
+
 <section class="project">
   <div class="grid grid-cols-2 gap-4"> 
-    <div class="bg-white flex justify-center rounded-lg px-8 py-[60px]">
-      <div class="relative w-[358px] bg-blue-900 rounded-t-[32px] flex h-[220px] rounded-b-[64px]">
-        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute left-6 top-[-40px] rounded-bl-[20px]">
-        <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="" class="absolute right-6 top-[-40px] rounded-br-[20px]">
-      </div>
+    <div class="bg-white flex flex-col gap-4 justify-center rounded-lg px-24 py-[60px] items-center">
+      <div class="relative w-[85%] h-64 bg-gradient-to-r from-blue-600 to-blue-900 rounded-t-3xl rounded-b-[64px]" style="background: linear-gradient(180deg, #2563EB 0%, #1E3A8A 100%);"> 
+        <div class="absolute inset-x-6 -top-8 flex gap-8">
+            <div class="flex-1 bg-gray-100 rounded-t-3xl p-4 flex items-center justify-center">
+                <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="">
+            </div>
+            <div class="flex-1 bg-gray-100 rounded-t-3xl p-4 flex items-center justify-center">
+                <img src="{{asset('assets/images/logo/img-dummy-project.svg')}}" alt="">
+            </div>
+        </div>
+        <div class="pseudo-element-left"></div>
+        <div class="pseudo-element-right"></div>
     </div>
+      <a href="javascript:;" class="border-[1px] border-slate-600 rounded-[99px] w-fit px-4 text-slate-600 font-normal text-sm mt-[-16px] !z-50">
+        Mobile App
+      </a>
+      <p class="text-[24px] gradient-text2 font-bold italic mt-4 self-start text-start">Complete Project Name #1</p>
+      <p class="text-slate-600 font-normal">Here’s a short copywriting text placeholder for a section showcasing your mobile and web app projects</p>
+      <a href="javascript:;" class="text-slate-600 font-bold italic text-[20px] self-start text-start underline underline-offset-4">View Project </a>
+    </div>
+
+    <div class="bg-white flex flex-col gap-4 justify-center rounded-lg px-24 py-[60px] items-center">
+      <div class="w-[80%] bg-blue-900 rounded-t-[32px] flex h-[220px] rounded-b-[64px] overflow-hidden relative">
+        <img src="{{asset('assets/images/icon/img-dummy-web.svg')}}" alt="img" class="rounded-bl-[1px] mx-auto mt-[30px] object-cover w-[85%]">
+      </div> 
+      <a href="javascript:;" class="border-[1px] border-slate-600 rounded-[99px] w-fit px-4 text-slate-600 font-normal text-sm object-cover">
+        Mobile App
+      </a>
+      <p class="text-[24px] gradient-text2 font-bold italic mt-4 self-start text-start">Complete Project Name #1</p>
+      <p class="text-slate-600 font-normal">Here’s a short copywriting text placeholder for a section showcasing your mobile and web app projects</p>
+      <a href="javascript:;" class="text-slate-600 font-bold italic text-[20px] self-start text-start underline underline-offset-4">View Project </a>
+    </div>
+
   </div>  
 </section>
 
