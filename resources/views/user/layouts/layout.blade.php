@@ -138,10 +138,10 @@
         }
         /* Light mode */
         .toggle .moon-icon {
-            color: #718096;
+            color: #475569;
         }
         .toggle .sun-icon {
-            color: #f59e0b;
+            color: #475569;
         }
         /* Dark mode */
         .toggle.dark-mode .slider {
