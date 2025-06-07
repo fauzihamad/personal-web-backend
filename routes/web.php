@@ -28,6 +28,7 @@ Route::middleware('guest')->get('admin/login', [AuthController::class,'loginPage
 Route::middleware('auth')->post('admin/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/', [PagesController::class, 'index'])->name('index');
+Route::get('/projects', [PagesController::class, 'projects'])->name('projects');
 Route::get('/detail/{id}', [PagesController::class, 'detail'])->name('detail');
 
 

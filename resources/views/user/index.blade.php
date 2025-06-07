@@ -11,6 +11,10 @@
     overflow: hidden;
   }
 
+  #resume:hover{
+    background: linear-gradient(90deg, #60A5FA 0%, #2563EB 100%);
+  }
+
   .project-image {
     transition: transform 0.5s ease, filter 0.5s ease;
   }
@@ -132,8 +136,8 @@
             <img width="16px" src="{{asset('assets/images/icon/arrow-bot.svg')}}" alt="arrow">
           </a>
 
-          <a href="javascript:;" class="bg-white dark:bg-transparent border-2 border-blue-900 dark:border-blue-500 rounded-xl flex justify-center w-full sm:w-fit p-2 gap-4 hover:bg-blue-600 hover:text-white transition-all duration-300">
-            <p class="text-blue-900 dark:text-blue-400 font-bold italic text-lg">Resume</p>
+          <a id="resume" href="javascript:;" class="bg-white dark:bg-transparent border-2 border-blue-600 dark:border-blue-500 rounded-xl flex justify-center w-full sm:w-fit p-2 gap-4 hover:bg-blue-600  transition-all duration-300">
+            <p class="text-blue-600 dark:text-white font-bold italic text-lg hover:text-white">Resume</p>
           </a>
         </div>
       </div>
@@ -167,8 +171,8 @@
 
 <section class="quote">
   <div class="bg-white dark:bg-[#0F172A] flex relative min-h-[400px] md:min-h-[300px] items-center justify-around rounded-lg shadow-lg py-8 px-4 animate-fade-in"> 
-    <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute top-0 left-0 w-8 h-8 md:w-12 md:h-12">
-    <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute bottom-0 right-0 rotate-180 w-8 h-8 md:w-12 md:h-12">
+    <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute top-0 left-0 w-fit h-8 md:h-12">
+    <img src="{{asset('assets/images/icon/quote.svg')}}" alt="quote icon" class="absolute bottom-0 right-0 rotate-180 w-fit h-8 md:h-12">
     <div class="flex flex-col animate-fade-in-up animate-delay-200">
       <p class="text-slate-800 dark:text-white font-bold text-2xl md:text-3xl lg:text-[48px] italic text-center leading-tight">"First, solve the problem. <br class="hidden md:block"> Then, write the code."</p>
       <p class="font-bold gradient-text2 text-center mt-4">John Johnson</p>
@@ -178,7 +182,7 @@
 
 <section class="services-intro">
   <div class="bg-white dark:bg-[#0F172A] flex relative rounded-lg shadow-lg py-8 px-4 animate-fade-in-left"> 
-    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 left-0 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 left-0 transform -translate-y-1/2 w-fit h-8 md:h-12">
     <div class="flex flex-col lg:flex-row gap-6 lg:gap-[80px] items-center w-full lg:mx-32 text-center lg:text-left">
       <p class="text-slate-800 dark:text-white font-bold text-3xl md:text-4xl lg:text-[48px] italic">Services</p>
       <p class="font-medium text-slate-600 dark:text-gray-300">Offering tailored services to enhance your brand, from stunning web designs <br class="hidden lg:block"> to engaging apps. Let's bring your vision to life!</p>
@@ -216,7 +220,7 @@
 
 <section class="skils-intro">
   <div class="bg-white dark:bg-[#0F172A] flex relative rounded-lg shadow-lg py-8 px-4 animate-fade-in-right"> 
-    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 right-0 rotate-180 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 right-0 rotate-180 transform -translate-y-1/2 w-fit h-8 md:h-12">
     <div class="flex flex-col lg:flex-row gap-6 lg:gap-[80px] items-center justify-center lg:justify-end w-full lg:mx-32 text-center lg:text-right">
       <p class="font-medium text-slate-600 dark:text-gray-300 order-2 lg:order-1">Leveraging top industry technologies to create innovative web and mobile <br class="hidden lg:block"> solutions, ensuring high-quality, scalable applications.</p>
       <p class="text-slate-800 dark:text-white font-bold text-3xl md:text-4xl lg:text-[48px] italic order-1 lg:order-2">Skills</p>
@@ -282,7 +286,7 @@
 
 <section class="project-intro">
   <div class="bg-white dark:bg-[#0F172A] flex relative rounded-lg shadow-lg py-8 px-4 animate-fade-in-left"> 
-    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 left-0 transform -translate-y-1/2 w-8 h-8 md:w-12 md:h-12">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute top-1/2 left-0 transform -translate-y-1/2 w-fit h-8 md:h-12">
     <div class="flex flex-col lg:flex-row gap-6 lg:gap-[80px] items-center w-full lg:mx-32 text-center lg:text-left">
       <p class="text-slate-800 dark:text-white font-bold text-3xl md:text-4xl lg:text-[48px] italic">Projects</p>
       <p class="font-medium text-slate-600 dark:text-gray-300">Offering tailored services to enhance your brand, from stunning web designs <br class="hidden lg:block"> to engaging apps. Let's bring your vision to life!</p>
@@ -325,13 +329,17 @@
 
 <section class="all-project">
   <div class="bg-white dark:bg-[#0F172A] flex relative rounded-lg shadow-lg py-8 h-[80px] md:h-[100px] items-center animate-fade-in"> 
-    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute left-0 w-8 h-8 md:w-12 md:h-12">
-    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute right-0 rotate-180 w-8 h-8 md:w-12 md:h-12">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute left-0 w-fit h-8 md:h-12">
+    <img src="{{asset('assets/images/icon/blue-icon.svg')}}" alt="quote icon" class="absolute right-0 rotate-180 w-fit h-8 md:h-12">
     <div class="flex items-center justify-center w-full">
-      <button class="text-blue-600 dark:text-blue-400 border-4 border-blue-600 dark:border-blue-400 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white transition-all duration-300 text-sm md:text-base">
-        View All Project
-        <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="hover:bg-white hover:text-blue-600" alt="arrow">
-      </button>
+      <a href="{{route('projects')}}">
+
+        <button class="text-blue-600 dark:text-white border-2 border-blue-600 dark:border-blue-300 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white transition-all duration-300 text-sm md:text-base">
+          View All Project
+          <img width="16px" src="{{asset('assets/images/logo-all-project.png')}}" class="hidden dark:block hover:text-blue-600" alt="arrow">
+          <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="block dark:hidden hover:text-blue-600" alt="arrow">
+        </button>
+        </a>
     </div>
   </div>
 </section>
@@ -340,9 +348,10 @@
   <div class="bg-white dark:bg-[#0F172A] flex min-h-[300px] lg:min-h-[400px] items-center justify-around rounded-lg shadow-lg py-8 px-4 animate-fade-in-up"> 
     <div class="flex flex-col gap-6 text-center">
       <p class="text-slate-800 dark:text-white font-bold text-2xl md:text-3xl lg:text-[48px] italic leading-tight">Ready to bring your ideas to life? <br class="hidden md:block"> Let's work together!</p>
-      <button class="w-fit mx-auto text-blue-600 dark:text-blue-400 border-4 border-blue-600 dark:border-blue-400 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 text-sm md:text-base">
+      <button class="w-fit mx-auto text-blue-600 dark:text-white border-2 border-blue-600 dark:border-blue-400 text-center font-extrabold italic px-4 py-2 rounded-xl flex gap-4 items-center hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 text-sm md:text-base">
         Say Hello on Whatsapp
-        <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="hover:bg-white hover:text-blue-600" alt="arrow">
+        <img width="16px" src="{{asset('assets/images/logo-all-project.png')}}" class="hidden dark:block hover:text-blue-600" alt="arrow">
+        <img width="16px" src="{{asset('assets/images/icon/angle-circle-down.svg')}}" class="block dark:hidden hover:text-blue-600" alt="arrow">
       </button>
     </div>
   </div>

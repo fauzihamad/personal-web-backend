@@ -1,11 +1,21 @@
 <div class="bg-white dark:bg-[#0F172A] flex items-center py-4 rounded-b-lg shadow-lg relative">
   <div class="flex justify-between w-full px-8">
     <div class="flex gap-4 justify-self-start flex-none">
-      <div class="flex flex-col relative">
-        <a href="javascript:;" class="font-bold italic text-md text-slate-800 dark:text-white">Home</a>
-        <div class="underline-custom"></div>
+      <div class="flex flex-col">
+        <a href="{{ route('index') }}" class="text-md cursor-pointer relative {{ Route::is('index') ? 'italic font-bold text-slate-800 dark:text-white' : 'font-light text-slate-600 dark:text-gray-300' }}">Home
+          @if (Route::is('index'))
+            <div class="underline-custom"></div>
+          @endif
+        </a>
       </div>
-      <a href="javascript:;" class="font-light text-md text-slate-600 dark:text-gray-300">Project</a>
+      <div class="flex flex-col">
+        <a href="{{ route('projects') }}" class="text-md cursor-pointer relative {{ Route::is('projects') ? 'italic font-bold text-slate-800 dark:text-white' : 'font-light text-slate-600 dark:text-gray-300' }}">Project
+          @if (Route::is('projects'))
+            <div class="underline-custom"></div>
+          @endif
+        </a>
+      </div>
+
     </div>
   
     <label class="toggle" id="themeToggle">
@@ -22,14 +32,36 @@
   </div>
 
   <div class="flex flex-1 gap-2 justify-self-center justify-center absolute mx-auto w-full">
-    <img src="{{asset('assets/images/logo/logo-whatsapp.svg')}}" alt="">
-    <img src="{{asset('assets/images/logo/logo-upwork.svg')}}" alt="">
-    <img src="{{asset('assets/images/logo/logo-linkedin.svg')}}" alt="">
-    <img src="{{asset('assets/images/logo/logo-github.svg')}}" alt="">
-    <img src="{{asset('assets/images/logo/logo-instagram.svg')}}" alt="">
+    <a href="https://wa.me/0881025566452" target="_blank">
+      <img class="cursor-pointer" src="{{asset('assets/images/logo/logo-whatsapp.svg')}}" alt="logo whatsapp">
+    </a>
+    <img class="cursor-pointer" src="{{asset('assets/images/logo/logo-upwork.svg')}}" alt="logo upwork">
+    <a href="https://www.linkedin.com/in/hamad-fauzi-jessar-343989202/" target="_blank">
+      <img class="cursor-pointer" src="{{asset('assets/images/logo/logo-linkedin.svg')}}" alt="logo linkedin">
+    </a>
+    <a href="https://github.com/fauzihamad?tab=repositories" target="_blank">
+      <img class="cursor-pointer" src="{{asset('assets/images/logo/logo-github.svg')}}" alt="logo github">
+    </a>
+    <img class="cursor-pointer" src="{{asset('assets/images/logo/logo-instagram.svg')}}" alt="logo instagram">
   </div>
 </div>
 
+<style>
+  .underline-custom {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    z-index: 1;
+  }
+
+  a {
+    position: relative;
+    z-index: 2;
+  }
+</style>
 <script>
   const toggle = document.getElementById('themeToggle');
   const toggleCheckbox = document.getElementById('checkToogle');

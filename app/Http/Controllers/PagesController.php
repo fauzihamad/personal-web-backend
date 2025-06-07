@@ -10,6 +10,10 @@ class PagesController extends Controller
         return view('user.index');
     }
 
+    public function projects(){
+        return view('user.project');
+    }
+
     public function detail($id){
         return view('user.detail');
     }
